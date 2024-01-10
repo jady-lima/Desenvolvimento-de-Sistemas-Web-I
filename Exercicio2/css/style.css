@@ -1,0 +1,33 @@
+p {
+    font-family: Arial;
+    background-color: beige;
+  }
+  
+  #p1{
+    background-color: aqua;
+    border: 3px solid black;
+  }
+  
+  #p2{
+    background-color: white;
+    border-style: dashed;
+  }
+  
+  #p3{
+    background-color: white;
+    border-radius: 3px;
+    border-top: dashed;
+    border-right: double;
+    border-bottom: dashed;
+    border-left: solid;
+  }
+  
+  #p4{
+    background-color: white;
+    border-style: solid;
+    border-radius: 3px;
+    border-top-color: red;
+    border-right-color: violet;
+    border-bottom-color: blue;
+    border-left-color: green;
+  }
