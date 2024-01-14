@@ -1,0 +1,57 @@
+body{
+    font-size: medium;
+    background-color: #f7e2e2;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+div{
+    margin: auto;
+}
+
+#interna{
+    width: 90%;
+    height: 100%;
+    background-color: #FBF2DD;
+}
+
+img{
+    width: 100%;
+    height: 260px;
+    display: inline;
+    padding: 0%;
+    margin: 0%;
+}
+
+#opcoes{
+    background-color: #ca6a97;
+}
+
+ul{
+    padding: 1%;
+    margin: auto;
+    margin-top: -4px;
+}
+
+li{
+    display: inline;
+    padding: 2%;
+}
+
+#secao{
+    margin: 0%;
+    padding: 1%;
+}
+
+h1{
+    margin: 0%;
+    
+}
+
+h5{
+    background-color: #ca6a97;
+    padding: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
