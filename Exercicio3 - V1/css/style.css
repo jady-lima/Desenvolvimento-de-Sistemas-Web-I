@@ -23,8 +23,9 @@ img{
 }
 
 ul{
-    margin: 0px;
-    padding: 0px;
+    margin-top: -10px;
+    padding: 5px;
+    background-color: #BF5E8B;
 }
 
 .menu{
@@ -34,7 +35,6 @@ ul{
     padding-right: 10%;
     padding-top: 0.7%;
     padding-bottom: 0.7%;
-    background-color: #BF5E8B;
     margin: 0pt;
 }
 
