@@ -19,6 +19,7 @@ header{
 header img{
     width: 10%;
     height: 70px;
+    padding-left: 10px;
 }
 
 header form{
