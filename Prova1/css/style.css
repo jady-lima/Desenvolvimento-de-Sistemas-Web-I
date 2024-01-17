@@ -1,0 +1,107 @@
+body{
+    background-color: white;
+}
+
+img{
+    border-radius: 10px;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(228, 211, 190);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid rgb(182, 132, 97);
+    border-top: 1px solid rgb(182, 132, 97);
+}
+
+header img{
+    width: 10%;
+    height: 70px;
+}
+
+header form{
+    display: inline;
+    padding-top: 25px;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav{
+    width: 15%;
+    text-align: center;
+    background-color: rgb(228, 211, 190);
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    margin-left: -35px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(120, 120, 226);
+}
+
+nav p{
+    font-size: 14px;
+}
+
+nav img{
+    width: 70%;
+}
+
+article{
+    width: 65%;
+    text-align: center;
+    padding: 15px;
+}
+
+article img{
+    width: 92%;
+}
+
+article p{
+    text-align: justify;
+}
+
+article h4{
+    text-align: left;
+}
+
+aside{
+    background-color: rgb(228, 211, 190);
+    width: 15%;
+    text-align: center;
+}
+
+aside div img{
+    width: 50%;
+}
+
+aside div{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 30px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(228, 228, 92);
+    padding: 1px;
+}
