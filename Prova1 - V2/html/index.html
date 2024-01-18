@@ -9,15 +9,20 @@
     </head>
     <body>
         <header>
-            <img src="../resources/images/IMD_logo_01-01.svg" alt="logoIMD">
+            <div id="headerLogo">
+                <img src="../resources/images/IMD_logo_120.png" alt="logoIMD">
+            </div>
             
-            <h2>INSTITUTO METRÓPOLE DIGITAL</h2>
+            <div id="headerTitulo">
+                <h1>INSTITUTO METRÓPOLE DIGITAL</h1>
+            </div>
 
-            <form action="">
-                <label for="pesquisa">Pesquise no SITE: </label>
-                <input type="text">
-                <input type="submit" value="Pesquisar">
-            </form>
+            <div id="headerForm">
+                <form action="">
+                    <input type="text">
+                    <button type="submit" class="button"></button>
+                </form>
+            </div>
         </header>
 
         <main>
@@ -26,26 +31,30 @@
 
                 <ul>
                     <li><a href="https://www.metropoledigital.ufrn.br/portal/" target="_blank" >Acesso ao portal IMD</a></li>
+                    <li><a href="https://www.google.com/" target="_blank">Faça uma pesquisa na WEB</a></li>
                 </ul>
 
-                <p>Faça uma pesquisa na WEB</p>
-
+                <hr>
                 <h4>Diretoria</h4>
 
-                <img src="../resources/images/gerente.jpg" alt="gerente">
+                <img src="../resources/images/gerente_203.jpg" alt="gerente">
                 <h5>Pedro Jose <br> Diretor Geral</h5>
 
-                <img src="../resources/images/diretor.jpg" alt="diretor">
+                <img src="../resources/images/diretor_203.jpg" alt="diretor">
                 <h5>Augusto de Souza<br> Diretor de ensino</h5>
 
-                <img src="../resources/images/diretora.jpg" alt="diretora">
+                <img src="../resources/images/diretora_203.jpg" alt="diretora">
                 <h5>Priscila de Almeida<br> Diretora de relações institucionais</h5>
             </nav>
 
             <article>
                 <h3>Conheça o IMD</h3>
 
-                <img src="../resources/images/imd.jpg" alt="imd">
+                <picture>
+                    <source srcset="../resources/images/imd_600.jpg" media="(max-width:600px)">
+                    <source srcset="../resources/images/imd_1200.jpg" media="(min-width:600px)">
+                    <img src="../resources/images/imd_600.jpg" alt="imd">
+                </picture>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio maxime eos, expedita repellendus sit aliquid cupiditate, 
                     id vel quia, praesentium iusto officia at eveniet quam. Quas eos quia molestiae culpa.</p>
@@ -71,7 +80,7 @@
                 <h2>Parceiros comerciais</h2>
 
                 <div id="divCelular">
-                    <img src="../resources/images/celular.webp" alt="celular">
+                    <img src="../resources/images/celular_120.webp" alt="celular">
                     <h5>Celular Samsung Galaxy A23 5G 128GB Preto</h5>
                 </div>
                 
@@ -82,7 +91,7 @@
 
                 
                 <div id="divGeladeira">
-                    <img src="../resources/images/gela.jpg" alt="geladeira">
+                    <img src="../resources/images/gela_120.jpg" alt="geladeira">
                     <h5>Geladeira Samsung Frost Free Side by Side 585 Litros</h5>
                 </div>
                 
@@ -90,7 +99,7 @@
         </main>
 
         <footer>
-            <h5>Acesso nosso portal</h5>
+            <h5><a href="https://www.metropoledigital.ufrn.br/portal/" target="_blank" >Acesso nosso portal</a></h5>
         </footer>
     </body>
 </html>

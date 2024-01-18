@@ -1,0 +1,139 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: rgb(180, 212, 225);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+header img{
+    max-width: 110px;
+    padding-left: 5%;
+}
+
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+}
+
+header form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 1vw;
+    padding-right: 5%;
+}
+
+header form button{
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    color: white;
+}
+
+.button{
+    background-image: url("../resources/images/procurar.png");
+    width: 29px;
+    height: 19px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: rgb(180, 212, 225);
+    padding: 1%;
+    text-align: center;
+    width: 12%;
+}
+
+nav h2, aside h2{
+    font-size: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0%;
+}
+
+nav ul li{
+    padding-bottom: 2%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(120, 120, 226);
+}
+
+nav img{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+article{
+    padding: 1%;
+    text-align: center;
+    width: 70%;
+}
+
+article h3{
+    font-size: medium;
+    text-align: center;
+}
+
+article img{
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+article p{
+    text-align: justify;
+}
+
+aside{
+    text-align: center;
+    width: 12%;
+    background-color: rgb(180, 212, 225);
+    padding: 1%;
+}
+
+aside div{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5%;
+    background-color: white;
+}
+
+aside img{
+    width: 80%;
+    padding: 5%;
+}
+
+footer{
+    background-color: blue;
+    padding: 1%;
+    text-align: center;
+    color: rgb(226, 231, 242);
+}
+
+footer h5 a{
+    text-decoration: none;
+    color: rgb(226, 220, 237);
+}
