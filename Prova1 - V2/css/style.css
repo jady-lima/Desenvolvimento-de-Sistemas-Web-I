@@ -127,13 +127,15 @@ aside img{
 }
 
 footer{
-    background-color: blue;
-    padding: 1%;
+    background-color: rgb(50, 50, 139);
     text-align: center;
     color: rgb(226, 231, 242);
+    padding: 1%;
 }
 
 footer h5 a{
     text-decoration: none;
     color: rgb(226, 220, 237);
+    margin: 1%;
+    padding: 1%;
 }
