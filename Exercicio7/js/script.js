@@ -10,5 +10,17 @@ function resultadoMedia(){
     var numero4 = Number(document.getElementById("numero4").value);
     var media = calculaMedia(numero1, numero2, numero3, numero4);
 
-    document.getElementById("resultado").innerHTML = "Resultado: " + media;
+    document.getElementById("media").innerHTML = "Média: " + media;
+    situacao(media);
+}
+
+function situacao(media){
+    situacao = "Situacao ";
+    if (media < 3) {
+        document.getElementById("resultado").innerHTML = situacao + "REPROVADO.";
+    } else if(media < 7) {
+        document.getElementById("resultado").innerHTML = situacao + "EM RECUPERAÇÃO.";
+    } else {
+        document.getElementById("resultado").innerHTML = situacao + "APROVADO.";
+    }
 }
