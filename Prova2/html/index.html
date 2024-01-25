@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2</title>
+</head>
+<body>
+    <h1>Realize seu cadastro</h1>
+    
+    <form action="#">
+        <label for="name">Nome: </label>
+        <br>
+        <input id="nome" type="text">
+        <br><br>
+
+        <label for="id">CPF: </label>
+        <br>
+        <input id="cpf" type="text">
+        <br><br>
+
+        <label for="data">Data de nascimento: </label>
+        <br>
+        <input id="nascimento" type="date">
+        <br><br>
+
+        <label for="end">Endereço: </label>
+        <br>
+        <input id="endereco" type="text">
+        <br><br>
+
+        <button onclick="recebeDados()">Cadastrar</button>
+    </form>
+
+    <h1>Imprime usuários</h1>
+    <form action="#">
+        <button onclick="imprimirUsuarios()">Imprimir na tela</button>
+        <button onclick="limparTela();">Limpar tela</button>
+    </form>
+    <p id="imprimeUsuarios"></p>
+
+    <h1>Pesquisar usuário</h1>
+    <form action="#">
+        <label for="procurar">Pesquisar usuário: </label>
+        <input type="text" id="pesquisar">
+        <button onclick="buscarUsuario()">Pesquisar</button>
+    </form>
+    <p id="buscarCadastro"></p>
+
+    <h1>Deletar Usuário</h1>
+    <form action="#">
+        <label for="delet">Deletar usuário: </label>
+        <input type="text" id="deletar">
+        <button onclick="deletarUsuario()">Deletar</button>
+    </form>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
