@@ -8,7 +8,7 @@ function recebeDados(){
     usuario[2] = document.getElementById('nascimento').value;
     usuario[3] = document.getElementById('endereco').value;
 
-    if(elementoNoArray(usuario[1]) != -1){
+    if(elementoNoArray(usuario[1]) === -1){
         usuarios.push(usuario);
         window.alert("Usuário cadastrado com sucesso!");
     } else {
@@ -17,16 +17,12 @@ function recebeDados(){
 }
 
 function elementoNoArray(cpf){
-    var indice = 0;
-    for (user of usuarios) {
-        var i = user.indexOf(cpf);
-        if (i != -1) {
-            return -1;
-        } else {
-            return indice;
+    for (var i = 0; i < usuarios.length; i++) {
+        if(usuarios[i][1] === cpf){
+            return i;
         }
-        indice++;
     }
+    return -1;
 }
 
 function imprimirUsuarios(){
@@ -46,30 +42,29 @@ function limparTela(){
 
 function buscarUsuario(){
     var msg = "";
-    var cpf = document.getElementById('pesquisar');
+    var cpf = document.getElementById('pesquisar').value;
+    var indice = elementoNoArray(cpf); 
 
-    var indice = elementoNoArray(cpf);
-
-    if(indice != -1){
+    if(indice === -1){
+        window.alert("Usuário não cadastrado!");
+    } else {
         msg += "Nome: " + usuarios[indice][0] + "<br>";
         msg += "CPF: " + usuarios[indice][1] + "<br>";
         msg += "Data de Nascimento: " + usuarios[indice][2] + "<br>";
         msg += "Endereço: " + usuarios[indice][3] + "<br>";
-    } else {
-        window.alert("Usuário não cadastrado!");
     }
 
     document.getElementById('buscarCadastro').innerHTML = msg;
 }
 
 function deletarUsuario(){
-    var cpf = document.getElementById('pesquisar');
+    var cpf = document.getElementById('pesquisar').value;
     var indice = elementoNoArray(cpf);
-    if(indice != -1){
-        usuarios.splice((indice+1), 1);
-        window.alert("Usuário removido!");
-    } else {
+    if(indice === -1){
         window.alert("Usuário não cadastrado!");
+    } else {
+        usuarios.splice((indice), 1);
+        window.alert("Usuário removido!");
     }
 }
  
